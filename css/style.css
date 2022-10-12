@@ -2,65 +2,82 @@
     font-family: "SpaceMono-Bold";
     src: url('../fonts/SpaceMono-Bold.ttf');
 }
+
 @font-face {
     font-family: "SpaceMono-Regular";
     src: url('../fonts/SpaceMono-Regular.ttf');
 }
 
-.img-resultado {
-    width: 100%;
-    height: 100%;
-    margin-top: 5%;
-}
 
 body {
     width: 100%;
     overflow-x: hidden;
     height: 100%;
-    padding:  0px 30px;
-   min-height: 600px;
-   color: #D1D5D5;
-   margin-bottom: 40px;
+    padding: 0px 30px;
+    min-height: 600px;
 }
+
+.img-resultado {
+    width: 100%;
+    height: 100%;
+}
+
 
 .container-right {
     height: 100%;
     background-color: #CBE7FF;
     border-radius: 20px;
-    margin-bottom: 40px;
+    min-height: 550px;
+    vertical-align: middle;
+    display: flex;
 }
 
-h3, h1, h2, h3, h4, h5{
-font-family: "SpaceMono-Bold";
-color: #2C263D;
+h3, h1, h2, h3, h4, h5 {
+    font-family: "SpaceMono-Bold";
+    color: #2C263D;
 }
-p{
-    font-family: "SpaceMono-Regular";  
+
+p {
+    font-family: "SpaceMono-Regular";
     color: #535460;
 }
 
-.mentoria{
+.mentoria {
     border-radius: 5px;
     padding: 5px;
     background-color: #F3F5F7;
     width: max-content !important;
 }
-.logo{
+
+.logo {
     width: 100% !important;
     max-width: 250px !important;
     margin-bottom: 40px;
 }
 
-.button{
+.button {
     padding: 10px;
     background-color: #FF4645;
     color: #2C263D;
     width: max-content !important;
     margin-left: 10px;
     text-decoration: none;
-    font-family: "SpaceMono-Bold";  
+    font-family: "SpaceMono-Bold";
+    margin-bottom: 20px;
 }
-.button:hover{
+
+.button:hover {
     color: #FF4645;
     background-color: #2C263D;
+}
+
+@media (max-width: 576px){
+    .container-right{
+        min-height: unset;
+
+    }
+    body{
+        margin-top: 40px !important;
+        margin-bottom: 40px !important;
+    }
 }
