@@ -8,6 +8,10 @@
     src: url('../fonts/SpaceMono-Regular.ttf');
 }
 
+@font-face {
+    font-family: "Manrope-Regular";
+    src: url('../fonts/Manrope-Regular.ttf');
+}
 
 body {
     width: 100%;
@@ -38,7 +42,7 @@ h3, h1, h2, h3, h4, h5 {
 }
 
 p {
-    font-family: "SpaceMono-Regular";
+    font-family: "Manrope-Regular";
     color: #535460;
 }
 
